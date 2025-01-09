@@ -66,7 +66,7 @@ export default function Home() {
   };
 
   const handleLimit = (event) => {
-    const newLimit = parseInt(event.target.value, 50);
+    const newLimit = parseInt(event.target.value, 10);
     setLimit(newLimit);
     setPage(1);
     fetchPokemons();
